@@ -1,3 +1,13 @@
+.call__text {
+  font-family: 'Roboto-Regular';
+  font-weight: 300;
+}
+
+.call__title, .call__btn {
+  font-family: 'OpenSans-Regular';
+  font-weight: 600;
+}
+
 @font-face {
   font-family: 'Roboto-Medium';
   font-weight: 500;
@@ -238,7 +248,7 @@ body {
 
 @media (min-width: 640px) {
   .top-slider__item {
-    min-width: 786px;
+    min-width: 386px;
   }
   .top-slider__title {
     font-size: 36px;
@@ -301,7 +311,7 @@ body {
 
 @media (min-width: 768px) {
   .top-slider__item {
-    min-height: 865px;
+    min-height: 465px;
   }
   .top-slider__title {
     padding: 87px 00;
@@ -324,7 +334,7 @@ body {
 
 @media (min-width: 1024px) {
   .top-slider__item {
-    min-height: 918px;
+    min-height: 618px;
   }
   .top-slider__title {
     padding-top: 101px;
@@ -340,7 +350,7 @@ body {
 
 @media (min-width: 1440px) {
   .top-slider__item {
-    min-height: 1068px;
+    min-height: 868px;
   }
   .top-slider__title {
     padding-top: 107px;
@@ -353,6 +363,93 @@ body {
     font-size: 24px;
     line-height: 26px;
     max-width: 886px;
+  }
+  .top-slider .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+  .top-slider .slick-prev {
+    top: calc(50% - 70px);
+  }
+  .top-slider .slick-prev:hover {
+    background-color: #1f74a5;
+    border: 1px solid #f9f6e5;
+    border-radius: 3px;
+  }
+  .top-slider .slick-next {
+    bottom: calc(50% - 70px);
+  }
+  .top-slider .slick-next:hover {
+    background-color: #1f74a5;
+    border: 1px solid #f9f6e5;
+    border-radius: 3px;
+  }
+}
+
+.call {
+  background-color: #1f74a5;
+  padding: 40px 0;
+  color: #f9f6e5;
+  text-align: center;
+}
+
+.call__title {
+  font-family: 'OpenSans-SemiBold';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.call__text {
+  margin-bottom: 40px;
+}
+
+.call__btn {
+  padding: 16px 15px;
+  background-color: #f9f6e5;
+  color: #1f74a5;
+  font-size: 18px;
+  border-radius: 3px;
+  border: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .call {
+    text-align: left;
+  }
+  .call__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .call__box {
+    max-width: 427px;
+  }
+  .call__text {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .call__box {
+    max-width: 695px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .call__inner {
+    padding: 0 80px;
+  }
+  .call__box {
+    max-width: 796px;
   }
 }
 /*# sourceMappingURL=style.css.map */
