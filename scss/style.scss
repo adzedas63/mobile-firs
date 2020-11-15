@@ -278,6 +278,31 @@ body {
             padding-top: 101px;
             font-size: 84px;
             line-height: 84px;
+            letter-spacing: 2px;
+            max-width: 750px;
+        }
+        .slick-dots{
+            bottom: 80px;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .top-slider{
+        &__item{
+            min-height: 668px;
+        }
+        &__title{
+            padding-top: 167px;
+            font-size: 96px;
+            line-height: 96px;
+            letter-spacing: 2px;
+            max-width: 865px;
+        }
+        &__text{
+            font-size: 24px;
+            line-height: 26px;
+            max-width: 886px;
         }
     }
 }

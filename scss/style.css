@@ -330,6 +330,29 @@ body {
     padding-top: 101px;
     font-size: 84px;
     line-height: 84px;
+    letter-spacing: 2px;
+    max-width: 750px;
+  }
+  .top-slider .slick-dots {
+    bottom: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .top-slider__item {
+    min-height: 668px;
+  }
+  .top-slider__title {
+    padding-top: 167px;
+    font-size: 96px;
+    line-height: 96px;
+    letter-spacing: 2px;
+    max-width: 865px;
+  }
+  .top-slider__text {
+    font-size: 24px;
+    line-height: 26px;
+    max-width: 886px;
   }
 }
 /*# sourceMappingURL=style.css.map */
