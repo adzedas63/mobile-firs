@@ -101,7 +101,7 @@ body {
 }
 
 .header {
-  background-color: #f9f6e5;
+  background-color: #1f74a5;
 }
 
 .header__inner {
@@ -143,10 +143,9 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 3px;
-  background-color: #1f74a5;
+  background-color: #f9f6e5;
   border: none;
   position: relative;
-  border: 1px solid #1f74a5;
   border-radius: 3px;
 }
 
@@ -155,12 +154,12 @@ body {
   width: 12px;
   height: 2px;
   border-radius: 1px;
-  background-color: #f9f6e5;
+  background-color: #1f74a5;
   position: absolute;
   top: 15px;
   left: 14px;
-  -webkit-box-shadow: 0 4px 0 0 #f9f6e5, 0 8px 0 0 #f9f6e5;
-          box-shadow: 0 4px 0 0 #f9f6e5, 0 8px 0 0 #f9f6e5;
+  -webkit-box-shadow: 0 4px 0 0 #1f74a5, 0 8px 0 0 #1f74a5;
+          box-shadow: 0 4px 0 0 #1f74a5, 0 8px 0 0 #1f74a5;
 }
 
 @media (min-width: 1440px) {
@@ -176,12 +175,6 @@ body {
   background-position: center center;
   background-size: cover;
   min-height: 193px;
-}
-
-@media (min-width: 640px) {
-  .head {
-    min-height: 386px;
-  }
 }
 
 .top-slider {
@@ -204,6 +197,10 @@ body {
   padding: 36px 0 28px;
   max-width: 243px;
   margin: 0 auto;
+}
+
+.top-slider__text {
+  display: none;
 }
 
 .top-slider__btn {
@@ -260,6 +257,7 @@ body {
     border: none;
     padding: 16px 45px;
     border-radius: 3px;
+    font-weight: 500;
   }
   .top-slider__btn:hover {
     background-color: transparent;
@@ -298,6 +296,40 @@ body {
     background-color: #1f74a5;
     border: 1px solid #f9f6e5;
     border-radius: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-slider__item {
+    min-height: 465px;
+  }
+  .top-slider__title {
+    padding: 87px 00;
+    margin: 0 auto 0;
+  }
+  .top-slider__title::after {
+    display: none;
+  }
+  .top-slider__text {
+    font-family: 'OpenSans-Light';
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 22px;
+    padding: 25px 0 32px;
+    display: block;
+    max-width: 587px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-slider__item {
+    min-height: 618px;
+  }
+  .top-slider__title {
+    padding-top: 101px;
+    font-size: 84px;
+    line-height: 84px;
   }
 }
 /*# sourceMappingURL=style.css.map */
