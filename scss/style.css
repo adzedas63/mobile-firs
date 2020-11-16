@@ -87,14 +87,14 @@ body {
 @media (min-width: 378px) {
   .container {
     max-width: 600px;
-    padding: 0 30px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 800px;
-    padding: 0 30px;
+    margin: 0 auto;
   }
 }
 
@@ -102,6 +102,7 @@ body {
   .container {
     max-width: 900px;
     padding: 0 40px;
+    margin: 0 auto;
   }
 }
 
