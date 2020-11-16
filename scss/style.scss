@@ -420,11 +420,11 @@
         justify-content: center;
     }
     &__item:hover {
-        .services__item-text{
-            display: block;
-        }
+        .services__item-text,
         .services__item-link{
-            display: block;
+            opacity: 1;
+            height: auto;
+            overflow: visible;
         }
         .services__item-img{
             margin-bottom: 14px;
@@ -439,6 +439,9 @@
             min-height: 277px;
         }
     }
+    &__item-inner{
+        transition: all .7s;
+    }
     &__item-img {
         margin-bottom: 30px;
     }
@@ -450,13 +453,18 @@
         @extend %open-700;
         text-transform: uppercase;
     }
+    &__item-text,
+    &__item-link{
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all .7s;
+    }
     &__item-text{
-        display: none;
         margin-bottom: 17px;
         @extend %roboto-300;
     }
     &__item-link{
-        display: none;
         letter-spacing: 2px;
         color: $accent;
         @extend %open-700;

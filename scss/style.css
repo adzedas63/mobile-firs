@@ -636,12 +636,11 @@ body {
           justify-content: center;
 }
 
-.services__item:hover .services__item-text {
-  display: block;
-}
-
+.services__item:hover .services__item-text,
 .services__item:hover .services__item-link {
-  display: block;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
 }
 
 .services__item:hover .services__item-img {
@@ -659,6 +658,11 @@ body {
   min-height: 277px;
 }
 
+.services__item-inner {
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
 .services__item-img {
   margin-bottom: 30px;
 }
@@ -671,13 +675,19 @@ body {
   text-transform: uppercase;
 }
 
+.services__item-text, .services__item-link {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
 .services__item-text {
-  display: none;
   margin-bottom: 17px;
 }
 
 .services__item-link {
-  display: none;
   letter-spacing: 2px;
   color: #1f74a5;
   text-transform: uppercase;
