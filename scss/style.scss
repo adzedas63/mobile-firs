@@ -1,84 +1,8 @@
 @import 'vars';
 @import 'fonts';
+@import 'global';
 
-html {
-    box-sizing: border-box;
-}
-*,*::after,*::before {
-    box-sizing: inherit;
-}
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-button {
-    padding: 0;
-}
-p {
-    margin: 0;
-}
-body {
-    min-width: 320px;
-    overflow-x: hidden;
-    font-family: 'Roboto-Regular',  'Courier New', Courier, monospace, 'sans-serif';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-}
-
-.container {
-    padding: 0 20px;
-}
-
-@media (min-width: 378px){
-    .container{
-        max-width: 600px;
-        margin: 0 auto;
-
-    }
-}
-
-@media (min-width: 640px){
-    .container{
-        max-width: 800px;
-        margin: 0 auto;
-
-    }
-}
-
-@media (min-width: 768px){
-    .container{
-        max-width: 900px;
-        padding: 0 40px;
-        margin: 0 auto;
-
-    }
-}
-
-@media (min-width: 1024px){
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 40px;
-    }
-}
-
-@media (min-width: 1440px){
-    .container{
-        max-width: 1520px;
-    }
-}
-
-@media (min-width: 2560px){
-    .container{
-        max-width: 2800px;
-    }
-}
 
 .header {
     background-color: $accent;
@@ -466,5 +390,75 @@ body {
         &__box{
             max-width: 1000px;
         } 
+    }
+}
+
+.services {
+    padding: 25px 0 40px;
+    text-align: center;
+    &__title{
+        margin-bottom: 47px;
+        color: $accent;
+    }
+    &__descr {
+        line-height: 24px;
+        font-size: 20px;
+        color: $text-color;
+        margin-bottom: 21px;
+    }
+    &__text {
+        color: $default-color;
+        line-height: 24px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    &__item {
+        min-height: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &:hover {
+        .services__item-text{
+            display: block;
+        }
+        .services__item-link{
+            display: block;
+        }
+        .services__item-img{
+            margin-bottom: 14px;
+        }
+        .services__item-title{
+            margin-bottom: 30px;
+        }
+        .services__item-inner{
+            border: 4px solid $accent;
+            margin: 18px;
+            padding: 25px 20px 5px;
+            min-height: 277px;
+        }
+    }
+    &__item-img {
+        margin-bottom: 30px;
+    }
+    &__item-title{
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        color: $accent;
+        @extend %open-700;
+        text-transform: uppercase;
+    }
+    &__item-text{
+        display: none;
+        margin-bottom: 17px;
+        @extend %roboto-300;
+    }
+    &__item-link{
+        display: none;
+        letter-spacing: 2px;
+        color: $accent;
+        @extend %open-700;
+        text-transform: uppercase;
     }
 }
