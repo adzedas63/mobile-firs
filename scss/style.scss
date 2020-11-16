@@ -418,7 +418,7 @@
         flex-direction: column;
         justify-content: center;
     }
-    &:hover {
+    &__inner:hover {
         .services__item-text{
             display: block;
         }
