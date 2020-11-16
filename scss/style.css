@@ -84,14 +84,23 @@ body {
   padding: 0 20px;
 }
 
+@media (min-width: 360px) {
+  .container {
+    max-width: 880px;
+    padding: 0 30px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
+    max-width: 800px;
     padding: 0 30px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
+    max-width: 900px;
     padding: 0 40px;
   }
 }
@@ -106,7 +115,13 @@ body {
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1320px;
+    max-width: 1520px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2800px;
   }
 }
 
@@ -248,7 +263,7 @@ body {
 
 @media (min-width: 640px) {
   .top-slider__item {
-    min-width: 386px;
+    min-width: 486px;
   }
   .top-slider__title {
     font-size: 36px;
