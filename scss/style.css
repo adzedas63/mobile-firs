@@ -635,23 +635,23 @@ body {
           justify-content: center;
 }
 
-.services__inner:hover .services__item-text {
+.services__item:hover .services__item-text {
   display: block;
 }
 
-.services__inner:hover .services__item-link {
+.services__item:hover .services__item-link {
   display: block;
 }
 
-.services__inner:hover .services__item-img {
+.services__item:hover .services__item-img {
   margin-bottom: 14px;
 }
 
-.services__inner:hover .services__item-title {
+.services__item:hover .services__item-title {
   margin-bottom: 30px;
 }
 
-.services__inner:hover .services__item-inner {
+.services__item:hover .services__item-inner {
   border: 4px solid #1f74a5;
   margin: 18px;
   padding: 25px 20px 5px;
