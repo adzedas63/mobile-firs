@@ -97,7 +97,7 @@
     &__btn{
         display: none;
     }
-
+}
 
 .slick-dots {
     display: flex;
@@ -121,9 +121,9 @@
         height: 10px;
         border-radius: 50%;
         margin: 0 10px;
-        }
     }
 }
+
 
 @media (min-width: 640px){
     .top-slider{
@@ -483,23 +483,30 @@
             background-color: ivory;
         }
     }
+
     &__item-img{
         min-height: 250px;
         border-radius: 4px;
+        padding: 12px 14px;
+        }
+    &__item-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($bg-color, 0.83);
+        border-radius: 4px;
+        min-height: 227px;
     }
-    &__item-info{
-        height: 60px;
-    }
+    &__item-info,
     &__item-search{
-        width: 60px;
+        margin: 0 7px;
     }
     &__item-link{
         display: block;
         padding: 20px 0;
         letter-spacing: 2px;
         line-height: 19px;
-        font-size: 18px;
         color: $accent;
-        @extend %open-600;
+        @extend %open-700;
+        }
     }
-}
