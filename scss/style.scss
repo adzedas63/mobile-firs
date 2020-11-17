@@ -65,7 +65,7 @@
 /* skyrius HEAD */
 
 .head {
-    background-image: url('../images/seapark1.jpg'); 
+    background-image: url('../images/augusta-1.jpg'); 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -470,4 +470,40 @@
         @extend %open-700;
         text-transform: uppercase;
     }
+}
+
+.project {
+    text-align: center;
+    padding: 20px 0 40px;
+    background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+    &__title{
+        color: ivory;
+        margin-bottom: 40px;
+        &::after{
+            background-color: ivory;
+        }
+    }
+    &__item-img{
+        min-height: 250px;
+        border-radius: 4px;
+    }
+    &__item-info{
+        height: 60px;
+    }
+    &__item-search{
+        width: 60px;
+    }
+    &__item-link{
+        display: block;
+        padding: 20px 0;
+        letter-spacing: 2px;
+        line-height: 19px;
+        font-size: 18px;
+        color: $accent;
+        @extend %open-600;
+    }
+}
+
+.team {
+
 }

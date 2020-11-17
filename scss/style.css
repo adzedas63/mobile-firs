@@ -3,7 +3,7 @@
   font-weight: 300;
 }
 
-.call__title, .call__btn {
+.call__title, .call__btn, .project__item-link {
   font-family: 'OpenSans-Regular';
   font-weight: 600;
 }
@@ -53,7 +53,7 @@
   font-weight: 300;
 }
 
-.call__title, .call__btn {
+.call__title, .call__btn, .project__item-link {
   font-family: 'OpenSans-Regular';
   font-weight: 600;
 }
@@ -277,7 +277,7 @@ body {
 
 /* skyrius HEAD */
 .head {
-  background-image: url("../images/seapark1.jpg");
+  background-image: url("../images/augusta-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -691,5 +691,43 @@ body {
   letter-spacing: 2px;
   color: #1f74a5;
   text-transform: uppercase;
+}
+
+.project {
+  text-align: center;
+  padding: 20px 0 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b4074), to(rgba(43, 64, 116, 0)));
+  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+}
+
+.project__title {
+  color: ivory;
+  margin-bottom: 40px;
+}
+
+.project__title::after {
+  background-color: ivory;
+}
+
+.project__item-img {
+  min-height: 250px;
+  border-radius: 4px;
+}
+
+.project__item-info {
+  height: 60px;
+}
+
+.project__item-search {
+  width: 60px;
+}
+
+.project__item-link {
+  display: block;
+  padding: 20px 0;
+  letter-spacing: 2px;
+  line-height: 19px;
+  font-size: 18px;
+  color: #1f74a5;
 }
 /*# sourceMappingURL=style.css.map */
