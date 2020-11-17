@@ -745,6 +745,8 @@ body {
 
 .project__item-info, .project__item-search {
   margin: 0 7px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .project__item-link {
