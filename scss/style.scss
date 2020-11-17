@@ -6,7 +6,8 @@
 
 .header {
     background-color: $accent;
-    &__inner{
+
+    &__inner {
         min-height: 80px;
         display: flex;
         justify-content: space-between;
@@ -14,28 +15,30 @@
     }
 }
 
-@media (min-width: 640px){
-    .header{
-        &__inner{
+@media (min-width: 640px) {
+    .header {
+        &__inner {
             min-height: 100px;
         }
     }
 }
+
 .logo__link {
     margin-left: 8px;
 }
 
-@media (min-width: 640px){
-    .logo__link{
+@media (min-width: 640px) {
+    .logo__link {
         margin-left: 14px;
     }
 }
 
-@media (min-width: 768px){
-    .logo__link{
+@media (min-width: 768px) {
+    .logo__link {
         margin-left: 0;
     }
 }
+
 .menu__btn {
     width: 40px;
     height: 40px;
@@ -43,8 +46,9 @@
     background-color: $bg-color;
     border: none;
     position: relative;
-            border-radius: 3px;
-    &::after{
+    border-radius: 3px;
+
+    &::after {
         content: "";
         width: 12px;
         height: 2px;
@@ -56,16 +60,17 @@
         box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
     }
 }
-@media (min-width: 1440px){
-    .menu__btn{
-        margin-right: 90px;    
+
+@media (min-width: 1440px) {
+    .menu__btn {
+        margin-right: 90px;
     }
 }
 
 /* skyrius HEAD */
 
 .head {
-    background-image: url('../images/augusta-1.jpg'); 
+    background-image: url('../images/augusta-1.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -75,26 +80,30 @@
 
 .top-slider {
     background: rgba(33, 33, 33, 0.5);
-    &__item{
+
+    &__item {
         color: $bg-color;
         text-align: center;
         min-height: 193px;
     }
-    &__title{
-    font-family: 'OpenSans-Light';
-    font-weight: 400;
-    font-style: normal;
-    line-height: 28px;
-    font-size: 22px;
-    text-transform: uppercase;
-    padding: 36px 0 28px;
-    max-width: 243px;
-    margin: 0 auto;
+
+    &__title {
+        font-family: 'OpenSans-Light';
+        font-weight: 400;
+        font-style: normal;
+        line-height: 28px;
+        font-size: 22px;
+        text-transform: uppercase;
+        padding: 36px 0 28px;
+        max-width: 243px;
+        margin: 0 auto;
     }
-    &__text{
+
+    &__text {
         display: none;
     }
-    &__btn{
+
+    &__btn {
         display: none;
     }
 }
@@ -106,13 +115,15 @@
     bottom: 20px;
     left: 0;
     right: 0;
-    .slick-active{
-        button{
+
+    .slick-active {
+        button {
             background-color: transparent;
             border: 1px solid #476e4d;
         }
     }
-    button{
+
+    button {
         font-size: 0;
         border: none;
         background-color: $accent;
@@ -125,12 +136,13 @@
 }
 
 
-@media (min-width: 640px){
-    .top-slider{
-        &__item{
+@media (min-width: 640px) {
+    .top-slider {
+        &__item {
             min-width: 486px;
         }
-        &__title{
+
+        &__title {
             font-size: 36px;
             line-height: 42px;
             font-weight: 600;
@@ -138,7 +150,8 @@
             margin: 0 auto 30px;
             max-width: 522px;
         }
-        &__btn{
+
+        &__btn {
             display: block;
             margin: 0 auto 113px;
             font-size: 18px;
@@ -149,14 +162,17 @@
             border-radius: 3px;
             font-weight: 500;
         }
-        &__btn:hover{
+
+        &__btn:hover {
             background-color: transparent;
             border: 1px solid $bg-color;
             border-radius: 3px;
         }
-        .slick-dots{
+
+        .slick-dots {
             bottom: 50px;
         }
+
         .slick-arrow {
             width: 56px;
             height: 56px;
@@ -165,108 +181,126 @@
             right: 0;
             z-index: 5;
         }
-        .slick-prev{
+
+        .slick-prev {
             background-color: transparent;
             border: 1px solid $bg-color;
             border-radius: 3px;
             top: calc(50% - 56px);
         }
-        .slick-prev:hover{
+
+        .slick-prev:hover {
             background-color: $accent;
             border: 1px solid $bg-color;
             border-radius: 3px;
         }
-        .slick-next{
+
+        .slick-next {
             background-color: transparent;
             border: 1px solid $bg-color;
             border-radius: 3px;
             bottom: calc(50% - 56px);
         }
-        .slick-next:hover{
+
+        .slick-next:hover {
             background-color: $accent;
             border: 1px solid $bg-color;
             border-radius: 3px;
         }
     }
 }
-@media (min-width: 768px){
-    .top-slider{
-        &__item{
+
+@media (min-width: 768px) {
+    .top-slider {
+        &__item {
             min-height: 465px;
         }
-        &__title{
+
+        &__title {
             padding: 87px 00;
             margin: 0 auto 0;
-            &::after{
+
+            &::after {
                 display: none;
             }
         }
-        &__text{
-    font-family: 'OpenSans-Light';
-    font-weight: 400;
-    line-height: 22px;
-    font-size: 22px;
-    padding: 25px 0 32px;
-    display: block;
-    max-width: 587px;
-    margin: 0 auto;
+
+        &__text {
+            font-family: 'OpenSans-Light';
+            font-weight: 400;
+            line-height: 22px;
+            font-size: 22px;
+            padding: 25px 0 32px;
+            display: block;
+            max-width: 587px;
+            margin: 0 auto;
         }
     }
 }
-@media (min-width: 1024px){
-    .top-slider{
-        &__item{
+
+@media (min-width: 1024px) {
+    .top-slider {
+        &__item {
             min-height: 618px;
         }
-        &__title{
+
+        &__title {
             padding-top: 101px;
             font-size: 84px;
             line-height: 84px;
             letter-spacing: 2px;
             max-width: 750px;
         }
-        .slick-dots{
+
+        .slick-dots {
             bottom: 80px;
         }
     }
 }
 
-@media (min-width: 1440px){
-    .top-slider{
-        &__item{
+@media (min-width: 1440px) {
+    .top-slider {
+        &__item {
             min-height: 868px;
         }
-        &__title{
+
+        &__title {
             padding-top: 107px;
             font-size: 96px;
             line-height: 96px;
             letter-spacing: 2px;
             max-width: 865px;
         }
-        &__text{
+
+        &__text {
             font-size: 24px;
             line-height: 26px;
             max-width: 886px;
         }
+
         .slick-arrow {
             width: 70px;
             height: 70px;
-          
+
         }
-        .slick-prev{
-            
+
+        .slick-prev {
+
             top: calc(50% - 70px);
         }
-        .slick-prev:hover{
+
+        .slick-prev:hover {
             background-color: $accent;
             border: 1px solid $bg-color;
             border-radius: 3px;
         }
-        .slick-next{
-            
+
+        .slick-next {
+
             bottom: calc(50% - 70px);
         }
-        .slick-next:hover{
+
+        .slick-next:hover {
             background-color: $accent;
             border: 1px solid $bg-color;
             border-radius: 3px;
@@ -274,42 +308,49 @@
     }
 }
 
-@media (min-width: 2560px){
-    .top-slider{
-        &__item{
+@media (min-width: 2560px) {
+    .top-slider {
+        &__item {
             min-height: 1600px;
         }
-        &__title{
+
+        &__title {
             padding-top: 107px;
             font-size: 96px;
             line-height: 96px;
             letter-spacing: 2px;
             max-width: 865px;
         }
-        &__text{
+
+        &__text {
             font-size: 24px;
             line-height: 26px;
             max-width: 1600px;
         }
+
         .slick-arrow {
             width: 90px;
             height: 90px;
-          
+
         }
-        .slick-prev{
-            
+
+        .slick-prev {
+
             top: calc(50% - 90px);
         }
-        .slick-prev:hover{
+
+        .slick-prev:hover {
             background-color: $accent;
             border: 1px solid $bg-color;
             border-radius: 3px;
         }
-        .slick-next{
-            
+
+        .slick-next {
+
             bottom: calc(50% - 90px);
         }
-        .slick-next:hover{
+
+        .slick-next:hover {
             background-color: $accent;
             border: 1px solid $bg-color;
             border-radius: 3px;
@@ -322,96 +363,108 @@
     padding: 40px 0;
     color: $bg-color;
     text-align: center;
+
     &__title {
-    @extend %open-600;
-    font-family: 'OpenSans-SemiBold';
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 15px;
+        @extend %open-600;
+        font-family: 'OpenSans-SemiBold';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 15px;
     }
+
     &__text {
-    @extend %roboto-300;
-    margin-bottom: 40px;
+        @extend %roboto-300;
+        margin-bottom: 40px;
     }
+
     &__btn {
-    padding: 16px 15px;
-    background-color: $bg-color;
-    color: $accent;
-    font-size: 18px;
-    @extend %open-600;
-    border-radius: 3px;
-    border: none;
-    text-transform: uppercase;
+        padding: 16px 15px;
+        background-color: $bg-color;
+        color: $accent;
+        font-size: 18px;
+        @extend %open-600;
+        border-radius: 3px;
+        border: none;
+        text-transform: uppercase;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .call {
         text-align: left;
-        &__inner{
+
+        &__inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        &__box{
+
+        &__box {
             max-width: 427px;
         }
-        &__text{
+
+        &__text {
             margin-bottom: 0;
         }
     }
 }
 
-@media (min-width: 1024px){
-    .call{
-        &__box{
+@media (min-width: 1024px) {
+    .call {
+        &__box {
             max-width: 695px;
-        } 
+        }
     }
 }
 
-@media (min-width: 1440px){
-    .call{
-        &__inner{
+@media (min-width: 1440px) {
+    .call {
+        &__inner {
             padding: 0 80px;
         }
-        &__box{
+
+        &__box {
             max-width: 796px;
-        } 
+        }
     }
 }
 
-@media (min-width: 2560px){
-    .call{
-        &__inner{
+@media (min-width: 2560px) {
+    .call {
+        &__inner {
             padding: 0 80px;
         }
-        &__box{
+
+        &__box {
             max-width: 1000px;
-        } 
+        }
     }
 }
 
 .services {
     padding: 25px 0 40px;
     text-align: center;
-    &__title{
+
+    &__title {
         margin-bottom: 47px;
         color: $accent;
     }
+
     &__descr {
         line-height: 24px;
         font-size: 20px;
         color: $text-color;
         margin-bottom: 21px;
     }
+
     &__text {
         color: $default-color;
         line-height: 24px;
         font-size: 18px;
         margin-bottom: 40px;
     }
+
     &__item {
         margin: 0 15% 0 15%;
         min-height: 310px;
@@ -419,33 +472,41 @@
         flex-direction: column;
         justify-content: center;
     }
+
     &__item:hover {
+
         .services__item-text,
-        .services__item-link{
+        .services__item-link {
             opacity: 1;
             height: auto;
             overflow: visible;
         }
-        .services__item-img{
+
+        .services__item-img {
             margin-bottom: 14px;
         }
-        .services__item-title{
+
+        .services__item-title {
             margin-bottom: 30px;
         }
-        .services__item-inner{
+
+        .services__item-inner {
             border: 4px solid $accent;
             margin: 18px;
             padding: 25px 20px 5px;
             min-height: 277px;
         }
     }
-    &__item-inner{
+
+    &__item-inner {
         transition: all .7s;
     }
+
     &__item-img {
         margin-bottom: 30px;
     }
-    &__item-title{
+
+    &__item-title {
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 2px;
@@ -453,18 +514,21 @@
         @extend %open-700;
         text-transform: uppercase;
     }
+
     &__item-text,
-    &__item-link{
+    &__item-link {
         opacity: 0;
         height: 0;
         overflow: hidden;
         transition: all .7s;
     }
-    &__item-text{
+
+    &__item-text {
         margin-bottom: 17px;
         @extend %roboto-300;
     }
-    &__item-link{
+
+    &__item-link {
         letter-spacing: 2px;
         color: $accent;
         @extend %open-700;
@@ -472,41 +536,135 @@
     }
 }
 
+
 .project {
     text-align: center;
     padding: 20px 0 40px;
     background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
-    &__title{
+
+    &__title {
         color: ivory;
         margin-bottom: 40px;
-        &::after{
+
+        &::after {
             background-color: ivory;
         }
     }
 
-    &__item-img{
-        min-height: 250px;
+    &__item-img {
+        min-height: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 4px;
         padding: 12px 14px;
+
+        &:hover {
+            .project__item-inner {
+                opacity: 1;
+            }
         }
-    &__item-inner{
+    }
+
+    &__item-inner {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgba($bg-color, 0.83);
         border-radius: 4px;
-        min-height: 227px;
+        min-height: 350px;
+        opacity: 0;
+        transition: all .7s;
     }
+
     &__item-info,
-    &__item-search{
+    &__item-search {
         margin: 0 7px;
     }
-    &__item-link{
+
+    &__item-link {
         display: block;
         padding: 20px 0;
         letter-spacing: 2px;
+        font-weight: bold;
         line-height: 19px;
+        font-size: 18px;
         color: $accent;
         @extend %open-700;
+    }
+}
+
+@media (min-width: 640px) {
+    .project {
+        padding: 40px 0 20px;
+        }
+
+        &__item-img {
+            min-height: 478px;
+            padding: 21px 24px;
+            margin: auto;
+        }
+        &__item-inner{
+            min-height: 417px;
+        }
+        &__item-link {
+            line-height: 23px;
+            font-size: 20px;
         }
     }
+
+    @media (min-width: 768px) {
+        .project {
+            &__items{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            }
+    
+            &__item-img {
+                min-height: 478px;
+                width: 317px;
+                padding: 12px 14px;
+                margin: auto;
+            }
+            &__item-inner{
+                min-height: 417px;
+            }
+            &__item-link {
+                padding: 30px 0;
+                line-height: 23px;
+                font-size: 20px;
+            }
+        }
+
+.team {
+    padding: 20px 0 40px;
+    text-align: center;
+
+    &__images {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        color: $text-color;
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        margin-bottom: 84px;
+    }
+
+    &__btn {
+        border: none;
+        background-color: $accent;
+        text-transform: uppercase;
+        border-radius: 4px;
+        padding: 21px 26px;
+        color: $bg-color;
+    }
+}
+
+@media (min-width: 640px) {}
