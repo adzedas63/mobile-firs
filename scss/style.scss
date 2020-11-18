@@ -40,8 +40,8 @@
 }
 
 .menu__btn {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: 3px;
     background-color: $bg-color;
     border: none;
@@ -50,14 +50,14 @@
 
     &::after {
         content: "";
-        width: 12px;
-        height: 2px;
+        width: 72px;
+        height: 12px;
         border-radius: 1px;
         background-color: $accent;
         position: absolute;
         top: 15px;
-        left: 14px;
-        box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
+        left: 4px;
+        box-shadow: 0 18px 0 0 $accent, 0 36px 0 0 $accent;
     }
 }
 
