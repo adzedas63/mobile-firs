@@ -156,4 +156,14 @@ body {
     width: 100px;
   }
 }
+
+@media (min-width: 640px) {
+  .title-team {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .title-team::after {
+    width: 100px;
+  }
+}
 /*# sourceMappingURL=global.css.map */

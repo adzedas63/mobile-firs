@@ -114,3 +114,13 @@ body {
         }
     }
 }
+
+@media (min-width: 640px){
+    .title-team{
+        font-size: 48px;
+        line-height: 56px;
+        &::after{
+            width: 100px;
+        }
+    }
+}

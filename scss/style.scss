@@ -716,41 +716,108 @@
         align-items: center;
     }
 }
-.title {
+.title-team {
+    line-height: 48px;
+    font-size: 44px;
     color: $accent;
+    @extend %open-700;
+    position: relative;
+    padding-bottom: 28px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 8px;
+        background-color: $accent;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1024px) {
+    .title-team{
+        text-align: left;
+    }
     .team {
         padding: 40px 0 80px;
+        text-align: left;
         &__inner{
             display: flex;
         }
         &__images{
-            margin-bottom: 40px;
+            margin-bottom: 0;
             margin-right: 34px;
-            margin-left: 60px;
+        }
+        &__title{
+            margin-bottom: 17px;
+            &::after{
+                margin-left: 0;
+                width: 100px;
+            }
         }
         &__text{
             margin-bottom: 56px;
+            font-size: 18px;
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .title-team{
+        text-align: left;
+    }
+    .team {
+        padding: 40px 0 80px;
+        text-align: left;
+        &__inner{
+            display: flex;
+        }
+        &__images{
+            margin-bottom: 0;
             margin-right: 34px;
+        }
+        &__title{
+            margin-bottom: 17px;
+            &::after{
+                margin-left: 0;
+                width: 100px;
+            }
+        }
+        &__text{
+            margin-bottom: 56px;
+            font-size: 18px;
+            text-align: left;
         }
     }
 }
 
 @media (min-width: 2560px) {
+    .title-team{
+        text-align: left;
+    }
     .team {
-        padding: 40px 0 60px;
+        text-align: left;
         &__inner{
             display: flex;
         }
         &__images{
-            margin-bottom: 40;
+            margin-bottom: 0;
             margin-right: 34px;
-            margin-left: 100px;
+        }
+        &__title{
+            margin-bottom: 17px;
+            &::after{
+                margin-left: 0;
+                width: 100px;
+            }
         }
         &__text{
-            margin-bottom: 66px;
+            margin-bottom: 56px;
+            font-size: 18px;
+            text-align: left;
         }
     }
 }
