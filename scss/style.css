@@ -247,8 +247,8 @@ body {
 }
 
 .menu__btn {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 3px;
   background-color: #f9f6e5;
   border: none;
@@ -258,15 +258,15 @@ body {
 
 .menu__btn::after {
   content: "";
-  width: 72px;
-  height: 12px;
-  border-radius: 1px;
+  width: 52px;
+  height: 8px;
+  border-radius: 2px;
   background-color: #1f74a5;
   position: absolute;
   top: 15px;
   left: 4px;
-  -webkit-box-shadow: 0 18px 0 0 #1f74a5, 0 36px 0 0 #1f74a5;
-          box-shadow: 0 18px 0 0 #1f74a5, 0 36px 0 0 #1f74a5;
+  -webkit-box-shadow: 0 12px 0 0 #1f74a5, 0 24px 0 0 #1f74a5;
+          box-shadow: 0 12px 0 0 #1f74a5, 0 24px 0 0 #1f74a5;
 }
 
 @media (min-width: 1440px) {
