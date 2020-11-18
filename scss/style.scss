@@ -446,6 +446,8 @@
     padding: 25px 0 40px;
     text-align: center;
 
+ 
+
     &__title {
         margin-bottom: 47px;
         color: $accent;
@@ -466,11 +468,10 @@
     }
 
     &__item {
+       
         margin: 0 15% 0 15%;
         min-height: 310px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+       
     }
 
     &__item:hover {
@@ -537,6 +538,10 @@
 }
 
 
+
+
+
+
 .project {
     text-align: center;
     background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
@@ -583,8 +588,7 @@
     &__item-info,
     &__item-search {
         margin: 0 7px;
-        justify-content: space-around;
-        
+        justify-content: space-around;        
     }
 
     &__item-link {
@@ -650,7 +654,22 @@
             justify-content: space-around;
         }
     }
+    &__item-img {
+        min-height: 377px;
+        height: 50vh;
+        width: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 4px;
+        padding: 12px 14px;
 
+        &:hover {
+            .project__item-inner {
+                opacity: 1;
+            }
+        }
+    }
 
     &__item-inner {
         min-height: 617px;
@@ -663,11 +682,13 @@
     }
 }
 
+
+
 .team {
     padding: 20px 0 40px;
     text-align: center;
     &__inner{
-        text-align: center;
+    text-align: center;
     align-content: center;
     }
     &__images {
@@ -699,5 +720,37 @@
     color: $accent;
 }
 
+@media (min-width: 1024px) {
+    .team {
+        padding: 40px 0 80px;
+        &__inner{
+            display: flex;
+        }
+        &__images{
+            margin-bottom: 40px;
+            margin-right: 34px;
+            margin-left: 60px;
+        }
+        &__text{
+            margin-bottom: 56px;
+            margin-right: 34px;
+        }
+    }
+}
 
-@media (min-width: 640px) {}
+@media (min-width: 2560px) {
+    .team {
+        padding: 40px 0 60px;
+        &__inner{
+            display: flex;
+        }
+        &__images{
+            margin-bottom: 40;
+            margin-right: 34px;
+            margin-left: 100px;
+        }
+        &__text{
+            margin-bottom: 66px;
+        }
+    }
+}
