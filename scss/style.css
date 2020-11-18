@@ -829,6 +829,12 @@ body {
   text-align: center;
 }
 
+.team__inner {
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .team__images {
   width: 50vh;
   height: 50vh;
@@ -854,5 +860,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.title {
+  color: #1f74a5;
 }
 /*# sourceMappingURL=style.css.map */

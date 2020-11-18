@@ -666,7 +666,10 @@
 .team {
     padding: 20px 0 40px;
     text-align: center;
-
+    &__inner{
+        text-align: center;
+    align-content: center;
+    }
     &__images {
         width: 50vh;
         height: 50vh;
@@ -692,5 +695,9 @@
         align-items: center;
     }
 }
+.title {
+    color: $accent;
+}
+
 
 @media (min-width: 640px) {}
