@@ -228,6 +228,10 @@ body {
   }
 }
 
+body {
+  background-color: #4c4c4c;
+}
+
 /* Credits to https://bootsnipp.com/snippets/1d3X9 */
 .b-0 {
   bottom: 0;
