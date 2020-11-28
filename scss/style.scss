@@ -3,6 +3,9 @@
 @import 'global';
 
 
+
+
+
 /* Credits to https://bootsnipp.com/snippets/1d3X9 */
 
 .b-0 {
@@ -602,7 +605,7 @@ header {
 
 .project {
     text-align: center;
-    background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+    background: linear-gradient(180deg, rgb(32, 178, 170) 0%, rgb(10, 88, 85) 100%);
 
     &__title {
         color: ivory;

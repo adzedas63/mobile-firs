@@ -766,8 +766,8 @@ header .overlay {
 
 .project {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2b4074), to(rgba(43, 64, 116, 0)));
-  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(lightseagreen), to(#0a5855));
+  background: linear-gradient(180deg, lightseagreen 0%, #0a5855 100%);
 }
 
 .project__title {
