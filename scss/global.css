@@ -130,7 +130,7 @@ body {
 .title {
   line-height: 28px;
   font-size: 24px;
-  color: #1f74a5;
+  color: lightseagreen;
   position: relative;
   padding-bottom: 28px;
 }
@@ -140,7 +140,7 @@ body {
   position: absolute;
   width: 50px;
   height: 8px;
-  background-color: #1f74a5;
+  background-color: lightseagreen;
   bottom: 0;
   left: 0;
   right: 0;
