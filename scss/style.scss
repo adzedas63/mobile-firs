@@ -6,6 +6,7 @@
 
 
 
+
 /* Credits to https://bootsnipp.com/snippets/1d3X9 */
 
 .b-0 {
@@ -474,9 +475,10 @@ header {
     align-content: center;
     }
     &__images {
-        width: 50vh;
-        height: 50vh;
+        width: 30vh;
+        height: 30vh;
         margin-bottom: 40px;
+        border-radius: 50%;
     }
 
     &__title {

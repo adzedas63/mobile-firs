@@ -683,9 +683,10 @@ header .overlay {
 }
 
 .team__images {
-  width: 50vh;
-  height: 50vh;
+  width: 30vh;
+  height: 30vh;
   margin-bottom: 40px;
+  border-radius: 50%;
 }
 
 .team__title {
