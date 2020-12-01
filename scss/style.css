@@ -1061,11 +1061,12 @@ section {
 }
 
 .footer-distributed .footer-icons a {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #33383b;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
