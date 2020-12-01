@@ -61,7 +61,14 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
+.footer__btn {
+  display: flex;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 /* Credits to https://bootsnipp.com/snippets/1d3X9 */
 
 .b-0 {
