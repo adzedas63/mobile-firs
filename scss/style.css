@@ -232,6 +232,76 @@ body {
   background-color: #4c4c4c;
 }
 
+.modal {
+  display: none;
+  font-family: "Calibri";
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(76, 76, 76, 0.6);
+}
+
+.modal__content {
+  background-color: #fefefe;
+  color: #802312;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  z-index: 9999;
+}
+
+.close__modal__window {
+  color: #b63838;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.modal__title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #136637;
+}
+
+.modal__btn {
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #9c7232;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2rem auto;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
 /* Credits to https://bootsnipp.com/snippets/1d3X9 */
 .b-0 {
   bottom: 0;
@@ -266,6 +336,11 @@ body {
 .zoom:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -865,6 +940,10 @@ section {
   width: 40%;
 }
 
+.footer-left {
+  margin: 0 40px 40px 0;
+}
+
 /* The company logo */
 .footer-distributed h3 {
   color: #ffffff;
@@ -986,13 +1065,12 @@ section {
   height: 35px;
   cursor: pointer;
   background-color: #33383b;
-  border-radius: 2px;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
   line-height: 35px;
   margin-right: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 18px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
